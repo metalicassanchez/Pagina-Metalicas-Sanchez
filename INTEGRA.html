@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Página</title>
+<meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="webmetalicassanchez.css" rel="stylesheet">
+<link href="INTEGRA.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.lazyload.min.js"></script>
+<script src="wb.stickylayer.min.js"></script>
+<script src="util.min.js"></script>
+<script src="carousel.min.js"></script>
+<link rel="stylesheet" href="galleria/theme/galleria.classic.min.css">
+<script src="galleria/galleria-1.5.4.min.js"></script>
+<script src="galleria/theme/galleria.classic.min.js"></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css">
+<script src="fancybox/jquery.easing-1.3.pack.js"></script>
+<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   $('#wb_PhotoGallery1 img').attr('title', '');$('#wb_PhotoGallery1').galleria({height:0.76});
+   $("a[href*='#down']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_down').offset().top }, 600, 'linear');
+   });
+   $("#Layer2").stickylayer({orientation: 3, position: [50, 50], delay: 500});
+   $("a[href*='#Layer2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#Layer2').offset().top }, 600, 'linear');
+   });
+   $("a[data-rel='SlideShow1']").attr('rel', 'SlideShow1');
+   $("#SlideShow1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+   $("#SlideShow2").bootstrapcarousel({interval:3000, ride: true});
+   $("a[data-rel='SlideShow3']").attr('rel', 'SlideShow3');
+   $("a[rel^='SlideShow3']").fancybox({});
+   $("a[data-rel='SlideShow4']").attr('rel', 'SlideShow4');
+   $("a[rel^='SlideShow4']").fancybox({});
+   $("a[data-rel='SlideShow6']").attr('rel', 'SlideShow6');
+   $("a[rel^='SlideShow6']").fancybox({});
+   $("a[data-rel='SlideShow9']").attr('rel', 'SlideShow9');
+   $("a[rel^='SlideShow9']").fancybox({});
+   $("a[data-rel='SlideShow10']").attr('rel', 'SlideShow10');
+   $("a[rel^='SlideShow10']").fancybox({});
+   $("#wb_ResponsiveMenu1 ul li a").click(function(event)
+   {
+      $("#wb_ResponsiveMenu1 input").prop("checked", false);
+   });
+   $('img[data-src]').lazyload();
+});
+</script>
+</head>
+<body>
+<div id="wb_Image4">
+<img src="" id="Image4" alt=""></div>
+<picture id="wb_Picture2">
+<img src="" id="Picture2" alt="">
+</picture>
+<div id="wb_SlideShow2">
+<div id="SlideShow2" class="carousel slide">
+<div class="carousel-inner">
+</div>
+</div>
+</div>
+<div id="Layer1">
+<div id="Layer1_Container">
+</div>
+</div>
+<div id="wb_down">
+<div id="down">
+<div class="col-1">
+<div id="wb_Image1">
+<img src="images/LOGO.png" id="Image1" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ResponsiveMenu1">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">Menu<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li>
+<label for="ResponsiveMenu1-submenu-0" class="toggle">Inicio<b class="arrow-down"></b></label>
+<a role="menuitem" href="./Index.html">Inicio<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul role="menu">
+<li><a role="menuitem" href="./Index.html#server">Servicios</a></li>
+</ul>
+</li>
+<li>
+<label for="ResponsiveMenu1-submenu-1" class="toggle">Productos<b class="arrow-down"></b></label>
+<a role="menuitem" href="./PRODUCTOS.html">Productos<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-1">
+<ul role="menu">
+<li><a role="menuitem" href="./PRODUCTOS.html#puertas">Puertas</a></li>
+<li><a role="menuitem" href="./VENTANAS.html#venta">Ventanas</a></li>
+<li><a role="menuitem" href="./ESTRUCTURA.html#estruc">Estructuras</a></li>
+</ul>
+</li>
+<li><a role="menuitem" href="./ALQUILER.html#alquiler">Alquiler</a></li>
+<li><a role="menuitem" href="./COTIZACION.html#cotiza3">Cotiza</a></li>
+<li><a role="menuitem" href="./CONTACTOS.html#contactos">Contactos</a></li>
+<li><a role="menuitem" href="./INTEGRA.html" class="active">Integra</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_PhotoGallery1">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/ilustracion2.jpg" data-rel=""><img alt="" id="PhotoGallery1_img0" src="images/placeholder.gif" data-src="images/ilustracion2.jpg"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/ilustracion1.jpg" data-rel=""><img alt="" id="PhotoGallery1_img1" src="images/placeholder.gif" data-src="images/ilustracion1.jpg"></a>
+      </div>
+      <div class="clearfix visible-col2"></div>
+      <div class="thumbnail">
+         <a href="images/ilustracion.jpg" data-rel=""><img alt="" id="PhotoGallery1_img2" src="images/placeholder.gif" data-src="images/ilustracion.jpg"></a>
+      </div>
+      <div class="clearfix visible-col2"></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_integra">
+<div id="integra">
+<div class="col-1">
+<div id="wb_Text4">
+<span style="color:#FFFFFF;"><strong>Proyecto Integra 2020B</strong></span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="col-1">
+<div id="wb_Text1">
+<span style="color:#000000;font-family:'Roboto Cn';font-size:32px;line-height:38px;">Bocetos logo</span>
+</div>
+<ul id="SlideShow3">
+<li><a href="images/BOCETO102.jpg" data-rel="SlideShow3"><img class="image" src="images/BOCETO102.jpg" alt="" title=""></a></li>
+<li><a href="images/BOCETO3.jpg" data-rel="SlideShow3"><img class="image" src="images/BOCETO3.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/BOCETO10.jpg" data-rel="SlideShow3"><img class="image" src="images/BOCETO10.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/BOCETO9.jpg" data-rel="SlideShow3"><img class="image" src="images/BOCETO9.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/BOCETO2.jpg" data-rel="SlideShow3"><img class="image" src="images/BOCETO2.jpg" style="display:none;" alt="" title=""></a></li>
+</ul>
+</div>
+<div class="col-2">
+<div id="wb_Text2">
+<span style="color:#000000;">Poster Integra</span>
+</div>
+<ul id="SlideShow1">
+<li><a href="images/PÓSTER INTEGRA (1).jpg" data-rel=""><img class="image" src="images/PÓSTER INTEGRA (1).jpg" alt="" title=""></a></li>
+</ul>
+</div>
+<div class="col-3">
+<div id="wb_Text6">
+<span style="color:#000000;">Ilustraciones</span>
+</div>
+<ul id="SlideShow4">
+<li><a href="images/BOCETO11.jpg" data-rel="SlideShow4"><img class="image" src="images/BOCETO11.jpg" alt="" title=""></a></li>
+<li><a href="images/BOCETO8.jpg" data-rel="SlideShow4"><img class="image" src="images/BOCETO8.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/BOCETO.jpg" data-rel="SlideShow4"><img class="image" src="images/BOCETO.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ILUSTRACION2.jpg" data-rel="SlideShow4"><img class="image" src="images/ILUSTRACION2.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/PINTOR2.jpg" data-rel="SlideShow4"><img class="image" src="images/PINTOR2.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/PRUEBA33.jpg" data-rel="SlideShow4"><img class="image" src="images/PRUEBA33.jpg" style="display:none;" alt="" title=""></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="col-1">
+<div id="wb_Text8">
+<span style="color:#000000;font-family:'Roboto Cn';font-size:32px;line-height:38px;">Bocetos Página Web</span>
+</div>
+<ul id="SlideShow9">
+<li><a href="images/WIRE.jpg" data-rel="SlideShow9"><img class="image" src="images/WIRE.jpg" alt="" title=""></a></li>
+<li><a href="images/WIRE2.jpg" data-rel="SlideShow9"><img class="image" src="images/WIRE2.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/WIRE3.jpg" data-rel="SlideShow9"><img class="image" src="images/WIRE3.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/WIRE34.jpg" data-rel="SlideShow9"><img class="image" src="images/WIRE34.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/WIRE9.jpg" data-rel="SlideShow9"><img class="image" src="images/WIRE9.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/BOCETO7.jpg" data-rel="SlideShow9"><img class="image" src="images/BOCETO7.jpg" style="display:none;" alt="" title=""></a></li>
+</ul>
+</div>
+<div class="col-2">
+<div id="wb_Text7">
+<span style="color:#000000;">Estrategia De Comunicación Visual</span>
+</div>
+<ul id="SlideShow6">
+<li><a href="images/ESTRATEGIA.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA.jpg" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA1.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA1.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA2.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA2.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA3.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA3.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA4.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA4.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA5.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA5.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA6.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA6.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA7.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA7.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA8.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA8.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA9.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA9.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA10.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA10.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA11.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA11.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/ESTRATEGIA12.jpg" data-rel="SlideShow6"><img class="image" src="images/ESTRATEGIA12.jpg" style="display:none;" alt="" title=""></a></li>
+</ul>
+</div>
+<div class="col-3">
+<div id="wb_Text9">
+<span style="background-color:#FFFFFF;color:#000000;">Diseño De Empaqué</span>
+</div>
+<ul id="SlideShow10">
+<li><a href="images/BOCETO4.jpg" data-rel="SlideShow10"><img class="image" src="images/BOCETO4.jpg" alt="" title=""></a></li>
+<li><a href="images/BOCETO5.jpg" data-rel="SlideShow10"><img class="image" src="images/BOCETO5.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/BOCETO6.jpg" data-rel="SlideShow10"><img class="image" src="images/BOCETO6.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/EMPAQU4.jpg" data-rel="SlideShow10"><img class="image" src="images/EMPAQU4.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/EMPAQU3.jpg" data-rel="SlideShow10"><img class="image" src="images/EMPAQU3.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/EMPAQU2.jpg" data-rel="SlideShow10"><img class="image" src="images/EMPAQU2.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/EMPAQUE.jpg" data-rel="SlideShow10"><img class="image" src="images/EMPAQUE.jpg" style="display:none;" alt="" title=""></a></li>
+<li><a href="images/EMPAQUE1.jpg" data-rel="SlideShow10"><img class="image" src="images/EMPAQUE1.jpg" style="display:none;" alt="" title=""></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="col-1">
+<div id="wb_Text10">
+<span style="color:#000000;">Links De Proyecto Escrito</span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text11">
+<span style="color:#000000;"><u><a href="https://www.calameo.com/books/006296474db0f75a187ba" target="_blank">https://www.calameo.com/books/006296474db0f75a187ba</a><br><br><a href="https://drive.google.com/drive/folders/1NQ3PGZHF4I560R78Xg5bCog8hv3MtzH2?usp=sharing" target="_blank">https://drive.google.com/drive/folders/1NQ3PGZHF4I560R78Xg5bCog8hv3MtzH2?usp=sharing</a></u></span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="col-1">
+<div id="wb_Text12">
+<span style="color:#FFFFFF;"><strong>Video Pitch</strong></span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_MediaPlayer2">
+<video src="VID_20201115_150852.mp4" id="MediaPlayer2" autoplay controls>
+</video>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="col-1">
+<div id="wb_Image8">
+<img src="images/LOGO.png" id="Image8" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text3">
+<span style="color:#FFFFFF;font-family:Roboto;font-size:17px;">Calle 14 # 7e-52<br>Chaparral Tolima<br>Tlf: 3203120251 / 3138483504<br>Email: metalicasanchez@gmail.com</span>
+</div>
+<div id="wb_Image3">
+<a href="https://es-la.facebook.com/" target="_blank"><img src="images/11_Mesa de trabajo 1.png" id="Image3" alt=""></a>
+</div>
+<div id="wb_Image5">
+<a href="https://www.whatsapp.com/" target="_blank"><img src="images/33_Mesa de trabajo 1.png" id="Image5" alt=""></a>
+</div>
+<div id="wb_Image6">
+<a href="https://twitter.com/" target="_blank"><img src="images/22_Mesa de trabajo 1.png" id="Image6" alt=""></a>
+</div>
+<div id="wb_Image7">
+<a href="https://www.instagram.com/" target="_blank"><img src="images/44_Mesa de trabajo 1.png" id="Image7" alt=""></a>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text5">
+<span style="color:#FFFFFF;font-family:Roboto;font-size:17px;">Horarios<br>Lunes a Viernes : 8:00-12:00 a.m <br>2:00-06:00 p.m <br>Sábados: 8:00-12:00 a.m </span>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer2">
+<div id="wb_FontAwesomeIcon1">
+<a href="#down"><div id="FontAwesomeIcon1"><i class="fa fa-hand-pointer-o"></i></div></a></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Página</title>
+<meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="webmetalicassanchez.css" rel="stylesheet">
+<link href="Index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="jquery.ui.effect-bars.min.js"></script>
+<script src="wb.slideshow.min.js"></script>
+<script src="wb.lazyload.min.js"></script>
+<script src="wb.stickylayer.min.js"></script>
+<link rel="stylesheet" href="galleria/theme/galleria.classic.min.css">
+<script src="galleria/galleria-1.5.4.min.js"></script>
+<script src="galleria/theme/galleria.classic.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#SlideShow1").slideshow(
+   {
+      interval: 1800,
+      type: 'sequence',
+      effect: 'bars',
+      direction: 'vertical',
+      count: 8,
+      pagination: false,
+      fullscreen: 4,
+      maxWidth: 1920,
+      effectlength: 800
+   });
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   $('#wb_PhotoGallery1 img').attr('title', '');$('#wb_PhotoGallery1').galleria({height:0.45});
+   $("#wb_ResponsiveMenu1 ul li a").click(function(event)
+   {
+      $("#wb_ResponsiveMenu1 input").prop("checked", false);
+   });
+   $("a[href*='#down']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_down').offset().top }, 600, 'linear');
+   });
+   $("#RollOverText1").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).outerHeight();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.60},{queue:false, duration:500});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:500});
+   });
+   $("#RollOverText2").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).outerHeight();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.60},{queue:false, duration:500});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:500});
+   });
+   $("#RollOverText3").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).outerHeight();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.60},{queue:false, duration:500});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:500});
+   });
+   $("#RollOverText5").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).outerHeight();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.60},{queue:false, duration:500});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:500});
+   });
+   $("#RollOverText4").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).outerHeight();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.60},{queue:false, duration:500});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:500});
+   });
+   $("#RollOverText6").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).outerHeight();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.60},{queue:false, duration:500});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:500});
+   });
+   $("#Layer2").stickylayer({orientation: 3, position: [50, 50], delay: 500});
+   $("a[href*='#Layer2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#Layer2').offset().top }, 600, 'linear');
+   });
+   $('img[data-src]').lazyload();
+});
+</script>
+</head>
+<body>
+<div id="wb_Image4">
+<img src="" id="Image4" alt=""></div>
+<div id="Layer1">
+<div id="Layer1_Container">
+</div>
+</div>
+<div id="wb_down">
+<div id="down">
+<div class="col-1">
+<div id="wb_Image1">
+<img src="images/LOGO.png" id="Image1" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ResponsiveMenu1">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">Menu<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li>
+<label for="ResponsiveMenu1-submenu-0" class="toggle">Inicio<b class="arrow-down"></b></label>
+<a role="menuitem" href="./Index.html" class="active">Inicio<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul role="menu">
+<li><a role="menuitem" href="./Index.html#server" class="active">Servicios</a></li>
+</ul>
+</li>
+<li>
+<label for="ResponsiveMenu1-submenu-1" class="toggle">Productos<b class="arrow-down"></b></label>
+<a role="menuitem" href="./PRODUCTOS.html">Productos<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-1">
+<ul role="menu">
+<li><a role="menuitem" href="./PRODUCTOS.html#puertas">Puertas</a></li>
+<li><a role="menuitem" href="./VENTANAS.html#venta">Ventanas</a></li>
+<li><a role="menuitem" href="./ESTRUCTURA.html#estruc">Estructuras</a></li>
+</ul>
+</li>
+<li><a role="menuitem" href="./ALQUILER.html#alquiler">Alquiler</a></li>
+<li><a role="menuitem" href="./COTIZACION.html#cotiza3">Cotiza</a></li>
+<li><a role="menuitem" href="./CONTACTOS.html#contactos">Contactos</a></li>
+<li><a role="menuitem" href="./INTEGRA.html">Integra</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_PhotoGallery1">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/cuar.jpg" data-rel=""><img alt="" id="PhotoGallery1_img0" src="images/placeholder.gif" data-src="images/cuar.jpg"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/TRES.jpg" data-rel=""><img alt="" id="PhotoGallery1_img1" src="images/placeholder.gif" data-src="images/TRES.jpg"></a>
+      </div>
+      <div class="clearfix visible-col2"></div>
+      <div class="thumbnail">
+         <a href="images/UNOS.jpg" data-rel=""><img alt="" id="PhotoGallery1_img2" src="images/placeholder.gif" data-src="images/UNOS.jpg"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/dos.jpg" data-rel=""><img alt="" id="PhotoGallery1_img3" src="images/placeholder.gif" data-src="images/dos.jpg"></a>
+      </div>
+      <div class="clearfix visible-col2"></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text1">
+<span style="color:#000000;"><strong>¿Porqué elegir nuestra empresa?</strong></span>
+</div>
+<div id="wb_Text2">
+<span style="color:#000000;">Metálicas Sánchez, puertas, ventanas y todo lo relacionado a la metalurgia es una empresa dedicada a la fabricación de productos metálicos, la cual viene trabajando desde 2002, tiempo en el cual hemos basado la gestión empresarial en lograr una estrecha relación comercial con nuestro público objetivo y proveedores, empleando altos estándares de calidad que nos han permitido adquirir la suficiente experiencia para satisfacer las necesidades de nuestros clientes y las de un mercado cada vez más competitivo en cuanto a precios, servicio, calidad y cumplimiento en las entregas<strong>.</strong></span>
+</div>
+</div>
+<div class="col-2">
+<ul id="SlideShow1">
+<li><img class="image" src="images/fndo3.jpg" alt="" title=""></li>
+<li><img class="image" src="images/fnd1.jpg" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/fnd2.jpg" style="display:none;" alt="" title=""></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_server">
+<div id="server">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text4">
+<span style="color:#000000;"><strong>S<u>ervicio</u>s</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="RollOverText3">
+   <img alt="Servicio De Doblado" class="image" src="images/1.jpg">
+   <div class="caption">
+      <div class="title">Servicio De Doblado</div>
+      <p class="description">Se hacen todo tipo de dobleces de lámina Cold Rolled y galvanizada desde calibres 18 hasta 16.</p>
+   </div>
+</div>
+<div id="RollOverText6">
+   <img alt="Servicio De Cortes Met&#225;licos" class="image" src="images/5.jpg">
+   <div class="caption">
+      <div class="title">Servicio De Cortes Metálicos</div>
+      <p class="description">Se hacen todo tipo de cortes de metal y tubería en tronzadora.</p>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="RollOverText1">
+   <img alt="Servicio De Corte De Lamina" class="image" src="images/3.jpg">
+   <div class="caption">
+      <div class="title">Servicio De Corte De Lamina</div>
+      <p class="description">Se realizan cortes de todo tipo de lámina en guillotina y cizalla.</p>
+   </div>
+</div>
+<div id="RollOverText4">
+   <img alt="Servicio De Perforaci&#243;n Met&#225;lica" class="image" src="images/6.jpg">
+   <div class="caption">
+      <div class="title">Servicio De Perforación Metálica</div>
+      <p class="description">Se realizan perforaciones sobre cualquier superficie metálica de cualquier dimensión en taladro de árbol. </p>
+   </div>
+</div>
+</div>
+<div class="col-3">
+<div id="RollOverText2">
+   <img alt="Servicio De Pintura" class="image" src="images/4.jpg">
+   <div class="caption">
+      <div class="title">Servicio De Pintura</div>
+      <p class="description">Se realizan acabados, terminados o en base de pintura con compresor sean estas puertas o cualquier otro material metálico.</p>
+      <a class="link" href="">More information</a>
+   </div>
+</div>
+<div id="RollOverText5">
+   <img alt="Servicio De Doblado Y Plantillado" class="image" src="images/7.jpg">
+   <div class="caption">
+      <div class="title">Servicio De Doblado Y Plantillado</div>
+      <p class="description">Se hacen todo tipo de dobleces de lámina Cold Rolled y galvanizada desde calibres 18 hasta 16.</p>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="col-1">
+<div id="wb_Image2">
+<img src="images/LOGO.png" id="Image2" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text3">
+<span style="color:#FFFFFF;font-family:Roboto;font-size:17px;">Calle 14 # 7e-52<br>Chaparral Tolima<br>Tlf: 3203120251 / 3138483504<br>Email: metalicasanchez@gmail.com</span>
+</div>
+<div id="wb_Image3">
+<a href="https://es-la.facebook.com/" target="_blank"><img src="images/11_Mesa de trabajo 1.png" id="Image3" alt=""></a>
+</div>
+<div id="wb_Image5">
+<a href="https://www.whatsapp.com/" target="_blank"><img src="images/33_Mesa de trabajo 1.png" id="Image5" alt=""></a>
+</div>
+<div id="wb_Image6">
+<a href="https://twitter.com/" target="_blank"><img src="images/22_Mesa de trabajo 1.png" id="Image6" alt=""></a>
+</div>
+<div id="wb_Image7">
+<a href="https://www.instagram.com/" target="_blank"><img src="images/44_Mesa de trabajo 1.png" id="Image7" alt=""></a>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text5">
+<span style="color:#FFFFFF;font-family:Roboto;font-size:17px;">Horarios<br>Lunes a Viernes : 8:00-12:00 a.m <br>2:00-06:00 p.m <br>Sábados: 8:00-12:00 a.m </span>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer2">
+<div id="wb_FontAwesomeIcon1">
+<a href="#down"><div id="FontAwesomeIcon1"><i class="fa fa-hand-pointer-o"></i></div></a></div>
+</div>
+</body>
+</html>
